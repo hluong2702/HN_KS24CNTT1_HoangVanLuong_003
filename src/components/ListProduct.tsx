@@ -235,8 +235,6 @@ useEffect(() => {
                       <InputNumber 
                         placeholder="Nhập giá"
                         style={{ width: '100%' }}
-                        formatter={value => `${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
-                        parser={value => value!.replace(/\$\s?|(,*)/g, '')}
                       />
                     </Form.Item>
                   </Col>
